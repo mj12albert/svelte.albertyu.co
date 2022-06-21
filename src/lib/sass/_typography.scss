@@ -1,0 +1,11 @@
+%text {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.65;
+
+  margin: auto auto 1rem;
+
+  @include mq.media('>=lg') {
+    line-height: 1.6;
+  }
+}

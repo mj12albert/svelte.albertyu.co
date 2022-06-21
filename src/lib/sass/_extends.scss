@@ -1,0 +1,18 @@
+%noTap {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+%column {
+  width: 90%;
+  margin: 0 auto;
+
+  @include mq.media('>=md') {
+    width: 85%;
+    max-width: 66.6666666667rem; // 1200px/18
+  }
+
+  @include mq.media('>=lg') {
+    max-width: 48.4848484848rem;
+  }
+}
