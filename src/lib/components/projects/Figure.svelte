@@ -21,7 +21,10 @@
   }
 
   figure :global(img),
-  figure :global(video), {
+  figure :global(video),
+  figure :global(picture), {
     max-width: 100%;
+    align-self: start;
+    line-height: 0;
   }
 </style>

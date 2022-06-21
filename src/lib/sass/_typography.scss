@@ -33,3 +33,17 @@
     letter-spacing: -1px;
   }
 }
+
+%project-credits {
+  @extend %sans-serif;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  line-height: 1;
+
+  margin-top: 1.618rem;
+
+  > .slash {
+    font-size: 150%;
+    font-weight: 400;
+  }
+}

@@ -1,4 +1,5 @@
 <script>
+  import Lede from './Lede.svelte';
   import Aside from './Aside.svelte';
   import Figure from './Figure.svelte';
   import Caption from './Caption.svelte';
@@ -9,7 +10,7 @@
   <article class="column">
     <h2>Home Psychological Services</h2>
 
-    <header>
+    <Lede>
       <Aside services={['design', 'code', 'backend']}>
         <span slot="year">
           2014
@@ -17,7 +18,7 @@
       </Aside>
 
       <p>Home is a partnership between Eliza and Winnie, clinical psychologists specializing in child development and family services, with a strong emphasis on practising positive psychology. Their new website was designed around a serene, uplifting graphical identity that reflects the personality and values of the practice. The old content-management system was also stripped out and replaced with leaner, more specialized components to simplify creating structured content like articles and workshops, and to significantly reduce maintenance overhead. The responsive site was templated and built with <a href="https://jekyllrb.com/">Jekyll</a>, hosted on <a href="https://pages.github.com/">Github Pages</a>, and integrated with <a href="https://developmentseed.org/blog/2013-03-20-building-a-new-prose">Prose.io</a> for writing and publishing.</p>
-    </header>
+    </Lede>
 
     <Figure>
       <picture>
@@ -91,26 +92,18 @@
   }
 
   .background {
+    height: 15rem;
     background-image:url('/images/harmonyhome/hh-header.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15rem;
 
     @include mq.media('>=md') {
       height: 25rem;
     }
 
     &:after {
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 80%;
-      background-size: 100%;
-      content: "";
+      @extend %project-header-gradient-layer;
 
       background-image: linear-gradient(to bottom,
         rgba(255, 255, 255, 0.0001),
@@ -125,21 +118,8 @@
     border-color: rgba(lighten(#1a4b3e, 12), 0.85);
   }
 
-  header {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: flex-start;
-    width: 90%;
-    margin: 0 auto;
-
-    @include mq.media('>=md') {
-      flex-flow: row nowrap;
-      width: 100%;
-    }
-  }
-
   .border {
-    box-shadow: 0, 0, 0, 1px, #f2f2f2;
+    box-shadow: 0 0 0 1px #f2f2f2;
   }
 
   // caption arrow color should be color: #0375B3
