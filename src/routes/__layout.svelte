@@ -1,13 +1,16 @@
 <script>
   import './modern-normalize.css';
-  import Icons from './_icons.svelte';
+  import SpriteSheet from '$lib/components/SpriteSheet.svelte';
+  import Overlay from '$lib/components/Overlay.svelte';
 </script>
 
-<Icons />
+<SpriteSheet />
 
-<main class="container">
+<main>
   <slot></slot>
 </main>
+
+<Overlay />
 
 <style lang="scss">
   $blue: #0074d9;
@@ -76,5 +79,20 @@
     position: relative;
     z-index: 90;
     background-color: #fdfdfd;
+    box-shadow: 0 0 1px 0 $neon-1;
+    transition: transform 350ms 100ms;
+
+    &.overlay-open {
+      opacity: 0.6;
+      transition: transform 450ms;
+
+      &.top {
+        transform: translateY(-9%) scale(0.8);
+      }
+
+      &.bottom {
+        transform: translateY(9%) scale(0.8);
+      }
+    }
   }
 </style>

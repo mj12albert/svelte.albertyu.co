@@ -27,12 +27,6 @@
 </footer>
 
 <style lang="scss">
-  $neon-1: #EC5587;
-  $neon-2: #FCEB3D;
-  $neon-3: #A7DB7D;
-  $neon-4: #52B8C4;
-  $neon-5: #D336FF;
-
   footer {
     line-height: 1;
     background-color: #262626;

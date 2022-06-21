@@ -1,9 +1,9 @@
 <nav>
   <ul class="navigation">
-    <li><a data-scroll href="#projects">Projects</a></li>
-    <li><a data-scroll href="#information">Info<span class="clip">rmation</span></a></li>
-    <li><a href="http://journal.albertyu.co" class="disabled">Journal</a></li>
-    <li><a href="#contact" class="trigger-overlay top">Contact</a></li>
+    <li><a class="link" data-scroll href="#projects">Projects</a></li>
+    <li><a class="link" data-scroll href="#information">Info<span class="clip">rmation</span></a></li>
+    <li><span class="link" disabled>Journal</span></li>
+    <li><button class="link trigger-overlay top" href="#contact">Contact</button></li>
   </ul>
 </nav>
 
@@ -20,9 +20,6 @@
     list-style-type: none;
     margin: 0;
     padding-left: 0;
-    text-transform: uppercase;
-    font-size: 0.695rem;
-    line-height: 1;
     display: flex;
     flex-flow: row nowrap;
 
@@ -63,8 +60,24 @@
     color: transparent;
   }
 
-  a {
+  button {
+    appearance: none;
+    background: none;
+    border: 0;
+    font-weight: 600;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .link {
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.695rem;
+    line-height: 1;
+
+    &,
     &:link,
     &:visited {
       color: #a4a4a4;
@@ -76,6 +89,7 @@
       color: #6b6b6b;
     }
 
+    &,
     &:link,
     &:visited,
     &:hover,
@@ -92,16 +106,10 @@
     }
   }
 
-  .disabled {
-    &:link,
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-      color: #ebebeb;
-      text-decoration: line-through;
-      pointer-events: none;
-      cursor: default;
-    }
+  [disabled] {
+    color: #ebebeb;
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: default;
   }
 </style>
