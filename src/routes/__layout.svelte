@@ -10,6 +10,9 @@
 </main>
 
 <style lang="scss">
+  $blue: #0074d9;
+  $aqua:  #7fdbff;
+
   :global {
     html {
       font: normal 112.5%/1.65 serif;
@@ -26,12 +29,44 @@
       margin: 0;
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    div,
+    article {
+      position: relative;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
       @extend %sans-serif;
     }
 
     p {
       margin: auto auto 1rem;
+    }
+
+    a {
+      transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+
+      &:link,
+      &:visited {
+        color: $blue;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $aqua;
+      }
+    }
+
+    hr {
+      width: 25%;
+      height: 2px;
+      border: 0;
+
+      margin: 2.945rem auto;
+
+      @include mq.media('>=md') {
+        display: none;
+      }
     }
   }
 

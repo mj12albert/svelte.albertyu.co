@@ -1,7 +1,7 @@
-<footer class="block block--footer">
+<footer>
   <div class="inner">
-    <small class="legal">&copy; 2014 Albert Yu</small>
-    <ul class="social">
+    <small>&copy; 2014 Albert Yu</small>
+    <ul>
       <li>
         <a href="tel:+85252178261" class="icon--phone">
           <svg class="icon"><use xlink:href="#icon--phone"/></svg>
