@@ -1,9 +1,30 @@
 <script>
+  import { menuState } from '$lib/store';
 
+  $: isOpen = $menuState.isOpen;
+
+  const handleClose = (ev) => {
+     ev.preventDefault();
+
+     menuState.update(v => {
+      return {
+        isOpen: !v.isOpen,
+        theme: null,
+      };
+    })
+  }
 </script>
 
-<div class="overlay zoom">
-  <button type="button" class="overlay-close">
+<div
+  class="overlay zoom"
+  style="
+    visibility: {isOpen ? 'visible' : 'hidden'};
+    z-index: {isOpen ? 95 : 0};
+    transform: translateY({isOpen ? '0%' : '100%'});
+    transition: {isOpen ? 'transform 400ms 50ms' : 'transform 350ms, visibility 0s 350ms'}
+  "
+>
+  <button type="button" class="overlay-close" on:click={handleClose}>
     <svg class="icon--close"><use xlink:href="#icon--close"></svg>
   </button>
 
@@ -39,19 +60,6 @@
     background: rgba(18, 18, 18, 0.96);
   }
 
-  .zoom {
-    visibility: hidden;
-    transform: translateY(100%);
-    transition: transform 350ms, visibility 0s 350ms;
-  }
-
-  .zoom.open {
-    visibility: visible;
-    z-index: 95;
-    transform: translateY(0%);
-    transition: transform 400ms 50ms;
-  }
-
   button {
     position: absolute;
     top: 1rem;
@@ -76,6 +84,7 @@
     &:hover,
     &:focus,
     &:active {
+      cursor: pointer;
       > svg {
         fill: rgba(255, 255, 255, 0.9);
         transition: fill 220ms ease-in-out;

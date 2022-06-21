@@ -1,4 +1,24 @@
-<button class="trigger-overlay bottom">
+<script>
+  import { menuState } from '$lib/store';
+
+  let state;
+
+  menuState.subscribe(val => {
+    state = val;
+  })
+
+  const handleClick = (ev) => {
+    ev.preventDefault();
+    menuState.update(s => {
+      return {
+        isOpen: !s.isOpen,
+        theme: 'light',
+      };
+    })
+  }
+</script>
+
+<button class="trigger-overlay bottom" on:click={handleClick}>
   <span class="arrow"></span><slot>Label</slot>
 </button>
 

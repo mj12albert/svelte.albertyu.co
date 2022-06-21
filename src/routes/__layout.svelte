@@ -1,12 +1,27 @@
 <script>
+  import { menuState } from '$lib/store';
   import './modern-normalize.css';
   import SpriteSheet from '$lib/components/SpriteSheet.svelte';
   import Overlay from '$lib/components/Overlay.svelte';
+
+  $: isOpen = $menuState.isOpen;
+  $: theme = $menuState.theme;
+
+  $: transform = {
+    'dark': 'translateY(-9%) scale(0.8)',
+    'light': 'translateY(9%) scale(0.8)',
+  }[theme]
 </script>
 
 <SpriteSheet />
 
-<main>
+<main
+  style="
+    opacity: {isOpen ? 0.6 : 1};
+    transition: {isOpen ? 'transform 450ms' : 'none'};
+    transform: {isOpen ? transform : 'none'}
+  "
+>
   <slot></slot>
 </main>
 
@@ -81,18 +96,5 @@
     background-color: #fdfdfd;
     box-shadow: 0 0 1px 0 $neon-1;
     transition: transform 350ms 100ms;
-
-    &.overlay-open {
-      opacity: 0.6;
-      transition: transform 450ms;
-
-      &.top {
-        transform: translateY(-9%) scale(0.8);
-      }
-
-      &.bottom {
-        transform: translateY(9%) scale(0.8);
-      }
-    }
   }
 </style>
