@@ -11,8 +11,8 @@
   $neon-pink: rgb(238, 95, 129);
 
   nav {
+    @extend %sans-serif;
     -webkit-backface-visibility: hidden;
-    font-family: 'Brandon Grotesque Bold';
     margin: 3.1rem 0 0.618rem;
   }
 
