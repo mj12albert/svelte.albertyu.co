@@ -36,11 +36,13 @@
 
 %project-credits {
   @extend %sans-serif;
+  display: block;
   text-transform: uppercase;
   font-size: 0.65rem;
   line-height: 1;
 
   margin-top: 1.618rem;
+  margin-bottom: 0;
 
   > .slash {
     font-size: 150%;

@@ -5,7 +5,7 @@
   import Caption from './Caption.svelte';
 </script>
 
-<section class="block block--project ekpac">
+<section class="ekpac">
   <div class="background"></div>
   <article class="column">
     <h2>Ekpac Sourcing</h2>
@@ -29,7 +29,7 @@
         <source srcset="/images/ekpac/ekpac-responsive-lg.png, /images/ekpac/ekpac-responsive-lg@2x.png 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-responsive-md.png, /images/ekpac/ekpac-responsive-md@2x.png 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-responsive-sm.png, /images/ekpac/ekpac-responsive-sm@2x.png 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-responsive-xs.png, /images/ekpac/ekpac-responsive-xs@2x.png 2x">
+        <img srcset="/images/ekpac/ekpac-responsive-xs.png, /images/ekpac/ekpac-responsive-xs@2x.png 2x" alt="">
       </picture>
     </Figure>
 
@@ -47,7 +47,7 @@
         <source srcset="/images/ekpac/ekpac-products-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-products-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-products-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-products-xs@2x.jpg">
+        <img srcset="/images/ekpac/ekpac-products-xs@2x.jpg" alt="">
       </picture>
 
       <hr class="hr">
@@ -56,7 +56,7 @@
         <source srcset="/images/ekpac/ekpac-excellence-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-excellence-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-excellence-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-excellence-xs@2x.jpg">
+        <img srcset="/images/ekpac/ekpac-excellence-xs@2x.jpg" alt="">
       </picture>
     </Figure>
 
@@ -67,7 +67,7 @@
         <source srcset="/images/ekpac/ekpac-id-beforeAfter-lg.jpg, /images/ekpac/ekpac-id-beforeAfter-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-id-beforeAfter-md.jpg, /images/ekpac/ekpac-id-beforeAfter-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-id-beforeAfter-sm.jpg, /images/ekpac/ekpac-id-beforeAfter-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-id-beforeAfter-xs.jpg, /images/ekpac/ekpac-id-beforeAfter-xs@2x.jpg 2x">
+        <img srcset="/images/ekpac/ekpac-id-beforeAfter-xs.jpg, /images/ekpac/ekpac-id-beforeAfter-xs@2x.jpg 2x" alt="">
       </picture>
 
       <Caption class="project__caption--below left">The new mark is distinguished by a sleek, agile form – a visualization of Ekpac’s persistent forward momentum. The redesign as a whole preserves and repurposes elements of the old identity, paying respect to the company’s rich heritage.</Caption>
@@ -78,14 +78,14 @@
         <source srcset="/images/ekpac/ekpac-id-heritage-lg.jpg, /images/ekpac/ekpac-id-heritage-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-id-heritage-md.jpg, /images/ekpac/ekpac-id-heritage-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-id-heritage-sm.jpg, /images/ekpac/ekpac-id-heritage-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-id-heritage-xs.jpg, /images/ekpac/ekpac-id-heritage-xs@2x.jpg 2x">
+        <img srcset="/images/ekpac/ekpac-id-heritage-xs.jpg, /images/ekpac/ekpac-id-heritage-xs@2x.jpg 2x" alt="">
       </picture>
 
       <picture class="border">
         <source srcset="/images/ekpac/ekpac-id-wordmark-lg.jpg, /images/ekpac/ekpac-id-wordmark-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-id-wordmark-md.jpg, /images/ekpac/ekpac-id-wordmark-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-id-wordmark-sm.jpg, /images/ekpac/ekpac-id-wordmark-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-id-wordmark-xs.jpg, /images/ekpac/ekpac-id-wordmark-xs@2x.jpg 2x">
+        <img srcset="/images/ekpac/ekpac-id-wordmark-xs.jpg, /images/ekpac/ekpac-id-wordmark-xs@2x.jpg 2x" alt="">
       </picture>
     </Figure>
 
@@ -94,14 +94,14 @@
         <source srcset="/images/ekpac/ekpac-id-lockups-lg.jpg, /images/ekpac/ekpac-id-lockups-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-id-lockups-md.jpg, /images/ekpac/ekpac-id-lockups-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-id-lockups-sm.jpg, /images/ekpac/ekpac-id-lockups-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-id-lockups-xs.jpg, /images/ekpac/ekpac-id-lockups-xs@2x.jpg 2x">
+        <img srcset="/images/ekpac/ekpac-id-lockups-xs.jpg, /images/ekpac/ekpac-id-lockups-xs@2x.jpg 2x" alt="">
       </picture>
 
       <picture class="border">
         <source srcset="/images/ekpac/ekpac-id-colors-lg.jpg, /images/ekpac/ekpac-id-colors-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/ekpac/ekpac-id-colors-md.jpg, /images/ekpac/ekpac-id-colors-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/ekpac/ekpac-id-colors-sm.jpg, /images/ekpac/ekpac-id-colors-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/ekpac/ekpac-id-colors-xs.jpg, /images/ekpac/ekpac-id-colors-xs@2x.jpg 2x">
+        <img srcset="/images/ekpac/ekpac-id-colors-xs.jpg, /images/ekpac/ekpac-id-colors-xs@2x.jpg 2x" alt="">
       </picture>
     </Figure>
   </article>
@@ -148,6 +148,10 @@
     margin-left: -0.1111111111rem;
   }
 
+  .ekpac :global(aside li:after) {
+    color: #fecb00;
+  }
+
   small {
     @extend %project-credits;
     color: rgba(#cfcfcf, 0.99);
@@ -160,5 +164,12 @@
   // caption arrow color should be color: #fecb00
   .ekpac :global(figcaption) {
     color: #f2f2f2;
+  }
+
+  .hr {
+    background-color: lighten(#093054, 15);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(#fecb00, 0.75);
   }
 </style>

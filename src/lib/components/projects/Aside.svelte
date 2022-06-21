@@ -32,11 +32,14 @@
   }
 
   .year {
+    display: inline-block;
     font-size: 130%;
+    margin-bottom: 0.125rem;
   }
 
   ul {
     display: flex;
+    flex-flow: row wrap;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -47,6 +50,7 @@
     flex-flow: row nowrap;
     align-items: center;
     line-height: 1;
+    white-space: nowrap;
 
     &:after {
       content: " /";

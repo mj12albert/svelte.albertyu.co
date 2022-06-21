@@ -25,7 +25,7 @@
         <source srcset="/images/harmonyhome/hh-responsive-lg.png, /images/harmonyhome/hh-responsive-lg@2x.png 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-responsive-md.png, /images/harmonyhome/hh-responsive-md@2x.png 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-responsive-sm.png, /images/harmonyhome/hh-responsive-sm@2x.png 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-responsive-xs.png, /images/harmonyhome/hh-responsive-xs@2x.png 2x">
+        <img srcset="/images/harmonyhome/hh-responsive-xs.png, /images/harmonyhome/hh-responsive-xs@2x.png 2x" alt="">
       </picture>
     </Figure>
 
@@ -34,14 +34,14 @@
         <source srcset="/images/harmonyhome/hh-style-tile-a-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-style-tile-a-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-style-tile-a-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-style-tile-a-xs@2x.jpg">
+        <img srcset="/images/harmonyhome/hh-style-tile-a-xs@2x.jpg" alt="">
       </picture>
 
       <picture class="border">
         <source srcset="/images/harmonyhome/hh-style-tile-b-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-style-tile-b-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-style-tile-b-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-style-tile-b-xs@2x.jpg">
+        <img srcset="/images/harmonyhome/hh-style-tile-b-xs@2x.jpg" alt="">
       </picture>
 
       <Caption class="project__caption--below right">Style tiles and element collages were used to quickly explore visual styles and elements. The final design is characterized by a soft color palette derived from the existing logo and subtle photography treatments.</Caption>
@@ -52,7 +52,7 @@
         <source srcset="/images/harmonyhome/hh-prose-interface-lg.jpg, /images/harmonyhome/hh-prose-interface-lg@2x.jpg 2x" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-prose-interface-md.jpg, /images/harmonyhome/hh-prose-interface-md@2x.jpg 2x" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-prose-interface-sm.jpg, /images/harmonyhome/hh-prose-interface-sm@2x.jpg 2x" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-prose-interface-xs.jpg, /images/harmonyhome/hh-prose-interface-xs@2x.jpg 2x">
+        <img srcset="/images/harmonyhome/hh-prose-interface-xs.jpg, /images/harmonyhome/hh-prose-interface-xs@2x.jpg 2x" alt="">
       </picture>
 
       <Caption class="project__caption--below left">On the backend, Prose was chosen for its simple and intuitive interface that only exposes writing and editing capabilities. Combining that with Github Pages allowed effortless publishing and backups. A lot of technical debt created by the previous, conventional CMS was eliminated.</Caption>
@@ -63,7 +63,7 @@
         <source srcset="/images/harmonyhome/hh-profile-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-profile-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-profile-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-profile-xs@2x.jpg">
+        <img srcset="/images/harmonyhome/hh-profile-xs@2x.jpg" alt="">
       </picture>
 
       <hr class="hr">
@@ -72,7 +72,7 @@
         <source srcset="/images/harmonyhome/hh-services-lg@2x.jpg" media="(min-width: 48.0625em)">
         <source srcset="/images/harmonyhome/hh-services-md@2x.jpg" media="(min-width: 30.0625em)">
         <source srcset="/images/harmonyhome/hh-services-sm@2x.jpg" media="(min-width: 20.0625em)">
-        <img srcset="/images/harmonyhome/hh-services-xs@2x.jpg">
+        <img srcset="/images/harmonyhome/hh-services-xs@2x.jpg" alt="">
       </picture>
     </Figure>
 
@@ -118,6 +118,14 @@
     border-color: rgba(lighten(#1a4b3e, 12), 0.85);
   }
 
+  .harmonyhome :global(aside) {
+    color: rgba(darken(#1a4b3e, 2), 0.95);
+  }
+
+  .harmonyhome :global(aside li:after) {
+    color: rgba(lighten(#1a4b3e, 2), 0.7);
+  }
+
   .border {
     box-shadow: 0 0 0 1px #f2f2f2;
   }
@@ -125,5 +133,10 @@
   // caption arrow color should be color: #0375B3
   .harmonyhome :global(figcaption) {
     color: desaturate(lighten(#1a4b3e, 20), 20%);
+  }
+
+  .hr {
+    background-color: darken(#8dd7c3, 10);
+    border-bottom: 1px solid desaturate(lighten(#8dd7c3, 10), 5%);
   }
 </style>
