@@ -3,11 +3,17 @@ import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://github.com/sveltejs/svelte-preprocess
-	// for more information about preprocessors
 	preprocess: preprocess({
     scss: {
-      prependData: `@import './src/lib/sass/manifest.scss';`
+      includePaths: [
+        'src',
+        'node_modules',
+      ],
+      prependData: `
+        @use '@nirazul/scss-mq' as mq;
+        @include mq.configure(('xs' 30em 'sm' 48em 'md' 62em 'lg' 75em 'xl'));
+        @import './src/lib/sass/manifest.scss';
+       `
     }
   }),
 
