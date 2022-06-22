@@ -1,6 +1,6 @@
 <section>
   <article>
-    <svg><use xlink:href="#icon--logo" /></svg>
+    <svg id="information"><use xlink:href="#icon--logo" /></svg>
 
     <h2>
       I’m a designer and developer dedicated to building meaningful experiences

@@ -10,6 +10,7 @@
 
 <Hero />
 
+<span id="projects" />
 <HarmonyHome />
 
 <Ekpac />

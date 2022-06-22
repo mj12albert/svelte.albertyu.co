@@ -1,8 +1,7 @@
 <script lang="ts">
   import { menuState } from '$lib/store';
 
-  const handleClick = (ev: MouseEvent) => {
-    ev.preventDefault();
+  const handleClick = () => {
     menuState.update((s) => {
       return {
         isOpen: !s.isOpen,
@@ -10,13 +9,21 @@
       };
     });
   };
+
+  const scrollIntoView = ({ currentTarget }: Event) => {
+    const el = document.querySelector(currentTarget.getAttribute('href'));
+    if (!el) return;
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
 
 <nav>
   <ul class="navigation">
-    <li><a class="link" data-scroll href="#projects">Projects</a></li>
+    <li><a class="link" on:click|preventDefault={scrollIntoView} href="#projects">Projects</a></li>
     <li>
-      <a class="link" data-scroll href="#information"
+      <a class="link" on:click|preventDefault={scrollIntoView} href="#information"
         >Info<span class="clip">rmation</span></a
       >
     </li>
@@ -25,7 +32,7 @@
       <button
         class="link trigger-overlay top"
         href="#contact"
-        on:click={handleClick}>Contact</button
+        on:click|preventDefault={handleClick}>Contact</button
       >
     </li>
   </ul>
