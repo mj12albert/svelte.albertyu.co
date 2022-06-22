@@ -50,7 +50,7 @@
   }
 
   .heading {
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     font-family: 'calluna';
     font-weight: 300;
     font-size: 1.82rem;

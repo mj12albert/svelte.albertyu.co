@@ -1,13 +1,7 @@
-<script>
+<script lang="ts">
   import { menuState } from '$lib/store';
 
-  let state;
-
-  menuState.subscribe((val) => {
-    state = val;
-  });
-
-  const handleClick = (ev) => {
+  const handleClick = (ev: MouseEvent) => {
     ev.preventDefault();
     menuState.update((s) => {
       return {

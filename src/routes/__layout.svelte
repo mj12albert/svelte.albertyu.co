@@ -10,7 +10,7 @@
   $: transform = {
     dark: 'translateY(-9%) scale(0.8)',
     light: 'translateY(9%) scale(0.8)',
-  }[theme];
+  }[theme || 'dark'];
 </script>
 
 <SpriteSheet />
@@ -34,7 +34,7 @@
   :global {
     html {
       font: normal 112.5%/1.65 serif;
-      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;

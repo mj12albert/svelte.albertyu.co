@@ -1,6 +1,9 @@
-import { writable } from 'svelte/store';
+import { writable, type Writable } from 'svelte/store';
 
-export const menuState = writable({
+export const menuState: Writable<{
+  isOpen: boolean,
+  theme: string | null,
+}> = writable({
   isOpen: false,
   theme: 'dark',
 });

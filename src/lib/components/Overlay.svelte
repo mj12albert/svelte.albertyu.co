@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { menuState } from '$lib/store';
 
   $: isOpen = $menuState.isOpen;
 
-  const handleClose = (ev) => {
+  const handleClose = (ev: MouseEvent) => {
     ev.preventDefault();
 
     menuState.update((v) => {
@@ -156,21 +156,21 @@
   }
 
   // TODO: colors if touch events supported
-  a.touchevents {
-    &:link,
-    &:visited,
-    &:active {
-      .label,
-      .value {
-        color: rgba(255, 255, 255, 0.55);
-      }
-    }
-  }
+  // a.touchevents {
+  //   &:link,
+  //   &:visited,
+  //   &:active {
+  //     .label,
+  //     .value {
+  //       color: rgba(255, 255, 255, 0.55);
+  //     }
+  //   }
+  // }
 
-  .touchevents .value:after {
-    opacity: 1;
-    max-width: 100%;
-  }
+  // .touchevents .value:after {
+  //   opacity: 1;
+  //   max-width: 100%;
+  // }
 
   .label {
     display: block;

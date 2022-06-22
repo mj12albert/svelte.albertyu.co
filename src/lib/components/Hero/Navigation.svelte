@@ -1,13 +1,7 @@
-<script>
+<script lang="ts">
   import { menuState } from '$lib/store';
 
-  let state;
-
-  menuState.subscribe((val) => {
-    state = val;
-  });
-
-  const handleClick = (ev) => {
+  const handleClick = (ev: MouseEvent) => {
     ev.preventDefault();
     menuState.update((s) => {
       return {
@@ -42,7 +36,7 @@
 
   nav {
     @extend %sans-serif;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     margin: 3.1rem 0 0.618rem;
   }
 

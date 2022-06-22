@@ -1,5 +1,5 @@
-<script>
-  export let services;
+<script lang="ts">
+  export let services: Array<string>;
 </script>
 
 <aside class="project__info">

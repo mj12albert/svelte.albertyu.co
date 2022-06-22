@@ -56,7 +56,7 @@
           alt=""
         />
       </picture>
-      <Caption class="project__caption--jca project__caption--right"
+      <Caption block={false} class="project__caption--jca project__caption--right"
         >This fellow was Judy’s initial “self-portrait” of her brand, and
         somehow found its way into our initial email conversations about the
         project. It provided a good starting point for discussing topics like
@@ -102,6 +102,7 @@
       <Caption
         class="project__caption--jca project__caption--left"
         id="jca-bear-doodle-highlight-caption"
+        block={false}
         >Practical, everyday skills is the most important thing Judy wanted to
         teach her students. As an enthusiastic home-cook myself, I understood
         the importance of using good tools for developing kitchen skills and
@@ -143,7 +144,7 @@
           alt=""
         />
       </picture>
-      <Caption class="project__caption--jca project__caption--right"
+      <Caption block={false} class="project__caption--jca project__caption--right"
         >Whisks happen to be a very common graphical device for anything related
         to food and cooking. Yet most cooks, celebrity, professional and amateur
         alike, would argue that the knife is a cook’s single most important
@@ -420,12 +421,10 @@
   }
 
   // specific image positions
-  #jca-bear-doodle-highlight {
-    clear: both;
+  :global(#jca-bear-doodle-highlight) {
     margin: 1.618rem 0 0;
 
     @include mq.media('>=sm') {
-      clear: none;
       width: 66%;
       margin-left: 1.5rem;
     }
@@ -435,7 +434,7 @@
     }
   }
 
-  #jca-bear-doodle-highlight-caption {
+  :global(#jca-bear-doodle-highlight-caption) {
     text-indent: 0;
     margin: 0 1.215rem 1.618rem 0;
 

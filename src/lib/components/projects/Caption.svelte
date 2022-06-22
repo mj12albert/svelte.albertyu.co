@@ -1,9 +1,11 @@
-<script>
-  export let align = 'left';
+<script lang="ts">
+  export let align: 'left' | 'right' = 'left';
   export let block = true;
+  export let id: string | undefined = undefined;
 </script>
 
 <figcaption
+  {id}
   style="
     grid-column: span {block ? 2 : 1};
     justify-self: {{left: 'start', right: 'end', }[align]};
