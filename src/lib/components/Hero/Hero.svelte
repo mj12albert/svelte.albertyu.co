@@ -4,7 +4,10 @@
 
 <section class="hero">
   <header class="header">
-    <h1 class="heading">Albert Yu is a freelance designer and developer in Hong Kong. He does not write nor speak in the third person.</h1>
+    <h1 class="heading">
+      Albert Yu is a freelance designer and developer in Hong Kong. He does not
+      write nor speak in the third person.
+    </h1>
     <Navigation />
   </header>
 </section>

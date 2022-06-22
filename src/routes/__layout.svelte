@@ -8,9 +8,9 @@
   $: theme = $menuState.theme;
 
   $: transform = {
-    'dark': 'translateY(-9%) scale(0.8)',
-    'light': 'translateY(9%) scale(0.8)',
-  }[theme]
+    dark: 'translateY(-9%) scale(0.8)',
+    light: 'translateY(9%) scale(0.8)',
+  }[theme];
 </script>
 
 <SpriteSheet />
@@ -22,14 +22,14 @@
     transform: {isOpen ? transform : 'none'}
   "
 >
-  <slot></slot>
+  <slot />
 </main>
 
 <Overlay />
 
 <style lang="scss">
   $blue: #0074d9;
-  $aqua:  #7fdbff;
+  $aqua: #7fdbff;
 
   :global {
     html {
@@ -54,7 +54,12 @@
       display: block;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       @extend %sans-serif;
     }
 

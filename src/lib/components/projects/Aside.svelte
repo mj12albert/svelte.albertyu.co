@@ -4,9 +4,7 @@
 
 <aside class="project__info">
   <span class="year">
-    <slot name="year">
-      YYYY
-    </slot>
+    <slot name="year">YYYY</slot>
   </span>
   <ul class="project__services">
     {#each services as s}
@@ -53,14 +51,14 @@
     white-space: nowrap;
 
     &:after {
-      content: " /";
+      content: ' /';
       margin: 0 0.375rem;
       font-size: 150%;
       font-weight: 300;
     }
 
     &:last-of-type::after {
-      content: "";
+      content: '';
     }
   }
 </style>

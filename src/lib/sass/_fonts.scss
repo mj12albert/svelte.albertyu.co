@@ -2,10 +2,10 @@
   font-family: 'Brandon Grotesque';
   src: url('/fonts/BrandonGrotesqueBold.eot');
   src: url('/fonts/BrandonGrotesqueBold.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/BrandonGrotesqueBold.woff2') format('woff2'),
-       url('/fonts/BrandonGrotesqueBold.woff') format('woff'),
-       url('/fonts/BrandonGrotesqueBold.ttf') format('truetype'),
-       url('/fonts/BrandonGrotesqueBold.svg#BrandonGrotesqueBold') format('svg');
+    url('/fonts/BrandonGrotesqueBold.woff2') format('woff2'),
+    url('/fonts/BrandonGrotesqueBold.woff') format('woff'),
+    url('/fonts/BrandonGrotesqueBold.ttf') format('truetype'),
+    url('/fonts/BrandonGrotesqueBold.svg#BrandonGrotesqueBold') format('svg');
   font-weight: 600;
   font-style: normal;
 }
@@ -13,22 +13,23 @@
 @font-face {
   font-family: 'Brandon Grotesque';
   src: url('/fonts/BrandonGrotesqueLight.eot');
-  src: url('/fonts/BrandonGrotesqueLight.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/BrandonGrotesqueLight.woff2') format('woff2'),
-       url('/fonts/BrandonGrotesqueLight.woff') format('woff'),
-       url('/fonts/BrandonGrotesqueLight.ttf') format('truetype'),
-       url('/fonts/BrandonGrotesqueLight.svg#BrandonGrotesqueLight') format('svg');
+  src: url('/fonts/BrandonGrotesqueLight.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/BrandonGrotesqueLight.woff2') format('woff2'),
+    url('/fonts/BrandonGrotesqueLight.woff') format('woff'),
+    url('/fonts/BrandonGrotesqueLight.ttf') format('truetype'),
+    url('/fonts/BrandonGrotesqueLight.svg#BrandonGrotesqueLight') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "calluna", Georgia, Times, "Times New Roman", serif;
+  font-family: 'calluna', Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
+  font-family: 'calluna-sans', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: 300;
 }

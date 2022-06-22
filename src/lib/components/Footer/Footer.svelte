@@ -4,22 +4,30 @@
     <ul>
       <li>
         <a href="tel:+85252178261" class="icon--phone">
-          <svg class="icon"><use xlink:href="#icon--phone"/></svg>
+          <svg class="icon"><use xlink:href="#icon--phone" /></svg>
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/mj12albert" target="_blank" class="icon--twitter">
-          <svg class="icon"><use xlink:href="#icon--twitter"/></svg>
+        <a
+          href="https://twitter.com/mj12albert"
+          target="_blank"
+          class="icon--twitter"
+        >
+          <svg class="icon"><use xlink:href="#icon--twitter" /></svg>
         </a>
       </li>
       <li>
-        <a href="http://instagram.com/mj12albert" target="_blank" class="icon--instagram">
-          <svg class="icon"><use xlink:href="#icon--instagram"/></svg>
+        <a
+          href="http://instagram.com/mj12albert"
+          target="_blank"
+          class="icon--instagram"
+        >
+          <svg class="icon"><use xlink:href="#icon--instagram" /></svg>
         </a>
       </li>
       <li>
         <a href="mailto:albert@albertyu.co" class="icon--email">
-          <svg class="icon"><use xlink:href="#icon--email"/></svg>
+          <svg class="icon"><use xlink:href="#icon--email" /></svg>
         </a>
       </li>
     </ul>

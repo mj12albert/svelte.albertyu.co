@@ -3,7 +3,7 @@
 </script>
 
 <figure style:grid-template-columns="repeat({cols}, 1fr">
-  <slot></slot>
+  <slot />
 </figure>
 
 <style lang="scss">
@@ -22,7 +22,7 @@
 
   figure :global(img),
   figure :global(video),
-  figure :global(picture), {
+  figure :global(picture) {
     max-width: 100%;
     align-self: start;
     line-height: 0;

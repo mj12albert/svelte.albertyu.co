@@ -3,23 +3,23 @@
 
   let state;
 
-  menuState.subscribe(val => {
+  menuState.subscribe((val) => {
     state = val;
-  })
+  });
 
   const handleClick = (ev) => {
     ev.preventDefault();
-    menuState.update(s => {
+    menuState.update((s) => {
       return {
         isOpen: !s.isOpen,
         theme: 'light',
       };
-    })
-  }
+    });
+  };
 </script>
 
 <button class="trigger-overlay bottom" on:click={handleClick}>
-  <span class="arrow"></span><slot>Label</slot>
+  <span class="arrow" /><slot>Label</slot>
 </button>
 
 <style lang="scss">
@@ -80,7 +80,7 @@
     transition: margin 200ms, opacity 180ms;
 
     &:before {
-      content:'→';
+      content: '→';
       margin-right: 1rem;
     }
   }

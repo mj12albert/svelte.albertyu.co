@@ -1,5 +1,5 @@
 <figcaption>
-  <slot></slot>
+  <slot />
 </figcaption>
 
 <style lang="scss">

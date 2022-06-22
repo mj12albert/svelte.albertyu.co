@@ -3,27 +3,37 @@
 
   let state;
 
-  menuState.subscribe(val => {
+  menuState.subscribe((val) => {
     state = val;
-  })
+  });
 
   const handleClick = (ev) => {
     ev.preventDefault();
-    menuState.update(s => {
+    menuState.update((s) => {
       return {
         isOpen: !s.isOpen,
         theme: 'dark',
       };
-    })
-  }
+    });
+  };
 </script>
 
 <nav>
   <ul class="navigation">
     <li><a class="link" data-scroll href="#projects">Projects</a></li>
-    <li><a class="link" data-scroll href="#information">Info<span class="clip">rmation</span></a></li>
+    <li>
+      <a class="link" data-scroll href="#information"
+        >Info<span class="clip">rmation</span></a
+      >
+    </li>
     <li><span class="link" disabled>Journal</span></li>
-    <li><button class="link trigger-overlay top" href="#contact" on:click={handleClick}>Contact</button></li>
+    <li>
+      <button
+        class="link trigger-overlay top"
+        href="#contact"
+        on:click={handleClick}>Contact</button
+      >
+    </li>
   </ul>
 </nav>
 
@@ -64,7 +74,7 @@
   }
 
   li:after {
-    content: " /";
+    content: ' /';
     font-size: 150%;
     font-weight: 300;
     color: $neon-pink;

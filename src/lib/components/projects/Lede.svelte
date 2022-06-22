@@ -1,5 +1,5 @@
 <header>
-  <slot></slot>
+  <slot />
 </header>
 
 <style lang="scss">

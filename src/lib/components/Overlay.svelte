@@ -4,15 +4,15 @@
   $: isOpen = $menuState.isOpen;
 
   const handleClose = (ev) => {
-     ev.preventDefault();
+    ev.preventDefault();
 
-     menuState.update(v => {
+    menuState.update((v) => {
       return {
         isOpen: !v.isOpen,
         theme: null,
       };
-    })
-  }
+    });
+  };
 </script>
 
 <div
@@ -21,11 +21,13 @@
     visibility: {isOpen ? 'visible' : 'hidden'};
     z-index: {isOpen ? 95 : 0};
     transform: translateY({isOpen ? '0%' : '100%'});
-    transition: {isOpen ? 'transform 400ms 50ms' : 'transform 350ms, visibility 0s 350ms'}
+    transition: {isOpen
+    ? 'transform 400ms 50ms'
+    : 'transform 350ms, visibility 0s 350ms'}
   "
 >
   <button type="button" class="overlay-close" on:click={handleClose}>
-    <svg class="icon--close"><use xlink:href="#icon--close"></svg>
+    <svg class="icon--close"><use xlink:href="#icon--close" /></svg>
   </button>
 
   <ul>
@@ -200,7 +202,7 @@
     }
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       right: 0;
       bottom: -1px;
