@@ -38,6 +38,10 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+
+      @include mq.media('>=lg') {
+        font: normal 137.5%/1.6 serif;
+      }
     }
 
     body {

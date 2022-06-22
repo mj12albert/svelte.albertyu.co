@@ -64,6 +64,7 @@
     }
 
     @include mq.media('>=lg') {
+      margin-top: 2rem;
       font-size: 2.618rem;
     }
   }
