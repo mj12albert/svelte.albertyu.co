@@ -8,7 +8,7 @@
   {id}
   style="
     grid-column: span {block ? 2 : 1};
-    justify-self: {{left: 'start', right: 'end', }[align]};
+    justify-self: {{ left: 'start', right: 'end' }[align]};
   "
 >
   <slot />

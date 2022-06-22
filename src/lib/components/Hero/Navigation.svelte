@@ -14,17 +14,23 @@
     const el = document.querySelector(currentTarget.getAttribute('href'));
     if (!el) return;
     el.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
-  }
+  };
 </script>
 
 <nav>
   <ul class="navigation">
-    <li><a class="link" on:click|preventDefault={scrollIntoView} href="#projects">Projects</a></li>
     <li>
-      <a class="link" on:click|preventDefault={scrollIntoView} href="#information"
-        >Info<span class="clip">rmation</span></a
+      <a class="link" on:click|preventDefault={scrollIntoView} href="#projects"
+        >Projects</a
+      >
+    </li>
+    <li>
+      <a
+        class="link"
+        on:click|preventDefault={scrollIntoView}
+        href="#information">Info<span class="clip">rmation</span></a
       >
     </li>
     <li><span class="link" disabled>Journal</span></li>

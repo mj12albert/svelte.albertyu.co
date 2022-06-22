@@ -56,7 +56,9 @@
           alt=""
         />
       </picture>
-      <Caption block={false} class="project__caption--jca project__caption--right"
+      <Caption
+        block={false}
+        class="project__caption--jca project__caption--right"
         >This fellow was Judy’s initial “self-portrait” of her brand, and
         somehow found its way into our initial email conversations about the
         project. It provided a good starting point for discussing topics like
@@ -84,7 +86,9 @@
           alt=""
         />
       </picture>
-      <Caption align="right" class="project__caption--jca project__caption--below right"
+      <Caption
+        align="right"
+        class="project__caption--jca project__caption--below right"
         >The design challenge pretty much came down to putting a “fun twist” on
         education, which is probably by far the most common way that people
         position educational programs and activities for children. To
@@ -144,7 +148,9 @@
           alt=""
         />
       </picture>
-      <Caption block={false} class="project__caption--jca project__caption--right"
+      <Caption
+        block={false}
+        class="project__caption--jca project__caption--right"
         >Whisks happen to be a very common graphical device for anything related
         to food and cooking. Yet most cooks, celebrity, professional and amateur
         alike, would argue that the knife is a cook’s single most important
@@ -216,7 +222,10 @@
           alt=""
         />
       </picture>
-      <Caption block align="right" class="project__caption--jca project__caption--below right"
+      <Caption
+        block
+        align="right"
+        class="project__caption--jca project__caption--below right"
         >Print collateral included a brochure and business cards. The pattern
         proved to be eye-catching even at smaller sizes.</Caption
       >
@@ -278,7 +287,9 @@
           alt=""
         />
       </picture>
-      <Caption align="right" class="project__caption--jca project__caption--below right"
+      <Caption
+        align="right"
+        class="project__caption--jca project__caption--below right"
         >Avenir was chosen as the text face for its cordial, sensible appeal,
         and was used for text-heavy applications like forms, schedules, and
         course materials.</Caption
