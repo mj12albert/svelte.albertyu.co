@@ -84,7 +84,7 @@
           alt=""
         />
       </picture>
-      <Caption class="project__caption--jca project__caption--below right"
+      <Caption align="right" class="project__caption--jca project__caption--below right"
         >The design challenge pretty much came down to putting a “fun twist” on
         education, which is probably by far the most common way that people
         position educational programs and activities for children. To
@@ -215,7 +215,7 @@
           alt=""
         />
       </picture>
-      <Caption class="project__caption--jca project__caption--below right"
+      <Caption block align="right" class="project__caption--jca project__caption--below right"
         >Print collateral included a brochure and business cards. The pattern
         proved to be eye-catching even at smaller sizes.</Caption
       >
@@ -277,7 +277,7 @@
           alt=""
         />
       </picture>
-      <Caption class="project__caption--jca project__caption--below right"
+      <Caption align="right" class="project__caption--jca project__caption--below right"
         >Avenir was chosen as the text face for its cordial, sensible appeal,
         and was used for text-heavy applications like forms, schedules, and
         course materials.</Caption
